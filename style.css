@@ -1,0 +1,635 @@
+@media only screen and (min-width: 1120px) {
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wlcmForm{
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+.sbBtn{
+	display: flex;
+	justify-content: center;
+}
+.logout{
+	display: flex;
+	justify-content: center;
+}
+.logout input{
+	
+	border:none;
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #49abfe;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	padding-top: 10px;
+	margin-top: 10px;
+	text-align: center;
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.wlcmForm label{
+	flex: 2;
+	margin-right: 40px;
+}
+.welcomeCont{
+	background: #fff;
+	display: block;
+	height: 50%;
+	width: 50%;
+	padding: 20px;
+}
+.welcomeCont h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.welcomeCont p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+}
+#labelIcon{
+	display: flex;
+  justify-content: space-between;
+}
+
+.register{
+	display: none;
+}
+#formAll2{
+	display: none;
+}
+body{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("res/bckgrnd.jpg");
+	 background-size: 110% 110%;
+	 animation: shrink 15s infinite alternate;
+	  background-position: center center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 2%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color: #8495b7;
+}
+input, button {
+	border:none;
+	outline: none;
+	background:none;
+}
+hr{
+	width: 40px;
+	background-color: #49abfe;
+	height: 3px;
+	border:none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+button{
+	display: block;
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+label{
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+label span{
+	font-size: 16px;
+	font-weight: 400;
+	color: #8495b7;
+	margin-top: 20px;
+}
+label span:after{
+	content:"*";
+     color:red;
+}
+label span.Active{
+	font-size: 16px;
+	font-weight: 600;
+	color: #8495b7;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+label span.Unactive{
+	font-size: 16px;
+	font-weight: 400;
+	color: #8495b7;
+	margin-top: 20px;
+}
+
+input{
+	display: block;
+	width:100%;
+    margin-bottom: 10px;
+	font-size: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(109,93,93,0.4);
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*Dark Container with Login and Signup Buttons*/
+.cont{
+	max-height: 600px;
+	display: inline-flex;
+	overflow: hidden;
+	position: absolute;
+	width: 48%;
+	height:420px auto;
+	background:rgba(15, 26, 47, 0.9);
+}
+.logIn{
+	min-height: 420px;
+	width: 50%;
+	height: 100%;
+	padding: 70px;
+	justify-content: center;
+}
+
+
+.Signin{
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+	padding: 90px;
+}
+
+.cont p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #fff;
+}
+.cont h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	color: #fff;
+}
+.cont button{
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: rgba(15, 26, 47, 0);
+	border: 2px solid #49abfe;
+}
+.cont button:hover{
+	background: #49abfe;
+}
+.required input:after { content:"*"; }
+/*White Container with form*/
+#LoginLogo{
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form{
+	position: relative;
+	margin-left: 21%;
+	width: 25%;
+	height: 460px;
+	background: #fff;
+	padding: 80px;
+}
+.form h2{
+	width:100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: left;
+	color:#3e495e;
+}
+.submit{
+	border:none;
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #f89a35;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	padding-top: 10px;
+	text-align: center;
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.submit:hover{
+	background:#f8bf35;
+}
+#submit_forgot{
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forgot-pass{
+color: #8495b7;
+font-weight:600;
+cursor: pointer;
+}
+
+/*ANIMATIONS*/
+#form.afterSignUp{
+position: relative;
+	margin-left: 21%;
+	width: 25%;
+	height: 460px;
+	background: #fff;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+animation: signUp 1s forwards;
+}
+#form.afterSignUp h2{
+width:100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: left;
+	color:#3e495e;
+}
+#form.afterLogin{
+position: relative;
+	margin-left: 21%;
+	width: 25%;
+	height: 460px;
+	background: #fff;
+	padding: 80px;
+animation: logIn 1s forwards;
+}
+#form.afterLogin h2{
+width:100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: left;
+	color:#3e495e;
+}
+#formAll1.afterSignUp{
+animation: fadeOut 0.5s forwards;
+  display: none;
+}
+#formAll2.afterSignUp{
+	display: grid;
+animation: fadeIn 0.5s forwards;
+}
+#formAll1.afterLogin{
+animation: fadeIn 0.5s forwards;
+}
+#formAll2.afterLogin{
+	display: none;
+animation: fadeOut 0.5s forwards;
+}
+#fold{
+	position: relative;
+	left:21%;
+}
+#fold.afterSignUp{
+	animation: signUpfold 1s forwards;
+}
+#fold.afterLogin{
+	animation: loginfold 1s forwards;
+}
+@keyframes signUp {
+  from {right: 0%;}
+  to {right: 20%;}
+}
+@keyframes signUpfold {
+  from {left: 21%;}
+  to {left: 1%;}
+}
+@keyframes loginfold {
+  from {left: 1%;}
+  to {left: 21%;}
+}
+@keyframes logIn {
+  from {right: 20%;}
+  to {right: 0%;}
+}
+@-webkit-keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01}
+    100% { opacity: 0}
+}  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0;}
+    99% { opacity: 0.99}
+    100% { opacity: 1}
+}  
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+}
+
+@media only screen and (max-width : 1024px) {
+   /* specific CSS for IPad*/
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#fold{
+	display: none;
+}
+
+.welcomeCont{
+	background: #fff;
+	display: block;
+	height: 80%;
+	align-items: center;
+	width: 80%;
+	padding: 20px;
+}
+.wlcmForm{
+	margin-top: 10px;
+}
+.welcomeCont h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 10px;
+	
+}
+.welcomeCont p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	
+}
+footer{
+	display: none;
+}
+hr{
+	width: 40px;
+	background-color: #49abfe;
+	height: 3px;
+	border:none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+body{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("res/bckgrnd.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+input, button {
+	border:none;
+	outline: none;
+	background:none;
+}
+label{
+	display: block;
+	width: 100%;
+		text-align: left;
+}
+label span{
+	font-size: 16px;
+	font-weight: 600;
+	color: #8495b7;
+	margin-top: 20px;
+}
+input{
+	display: block;
+	width:100%;
+    margin-bottom: 20px;
+	font-size: 16px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(109,93,93,0.4);
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+button{
+	display: block;
+	
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+#formAll2{
+	display: none;
+}
+/*Form in Mobile*/
+#LoginLogo{
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form{
+	position: absolute;
+	min-width: 320px;
+	width: auto;
+	height: auto;
+	background: #fff;
+	padding: 50px;
+}
+.form h2{
+	width:100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: left;
+	color:#3e495e;
+}
+.submit{
+	border:none;
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #f89a35;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	padding-top: 5px;
+	text-align: center;
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.submit:hover{
+	background:#f8bf35;
+}
+
+.forgot-pass{
+	margin-top: 15px;
+color: #8495b7;
+font-weight:600;
+cursor: pointer;
+text-align: center;
+}
+#submit_forgot{
+  padding-top: 20px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.logIn{
+	display: none;
+}
+.logIn h2{
+	display: none;
+}
+.logIn p{
+	display: none;	
+}
+.Signin{
+	display: none;
+}
+.Signin h2{
+	display: none;
+}
+.Signin p{
+	display: none;
+}
+.loginbtn{
+	display: none;
+}
+.loginbtn:hover{
+	display: none;
+}
+.signup{
+	display: none;
+}
+.signup:hover{
+	display: none;
+}
+.register{
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #49abfe;
+}
+
+.logout input{
+	border:none;
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #49abfe;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	padding-top: 5px;
+	text-align: center;
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+#formAll1.afterSignUp{
+	min-width: 320px;
+	width: auto;
+	height: auto;
+	background: #fff;
+	padding: 50px;
+animation-name: fadeOut;
+	animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  display: none;
+}
+#formAll2.afterSignUp{
+	display: grid;
+	min-width: 320px;
+	width: auto;
+	height: auto;
+	background: #fff;
+	padding: 50px;
+animation-name: fadeIn;
+	animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+#formAll1.afterLogin{
+animation-name: fadeIn;
+	min-width: 320px;
+	width: auto;
+	height: auto;
+	background: #fff;
+	padding: 50px;
+	animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+#formAll2.afterLogin{
+	display: none;
+	min-width: 320px;
+	width: auto;
+	height: auto;
+	background: #fff;
+	padding: 50px;
+animation-name: fadeOut;
+	animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+#formAll2 h2{
+	width:100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: left;
+	color:#3e495e;
+}
+#formAll1 h2{
+	width:100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: left;
+	color:#3e495e;
+}
+@-webkit-keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01}
+    100% { opacity: 0}
+}  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0;}
+    99% { opacity: 0.99}
+    100% { opacity: 1}
+}  
+}
